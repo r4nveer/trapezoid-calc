@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Area of Trapezoid Calculator</title>
+  <link rel="stylesheet" href="style.css"> <!-- Link to the CSS file -->
+</head>
+<body>
+  <div class="container">
+    <h1>Area of Trapezoid Calculator</h1>
+    <div class="formula">
+      
+      <img src="img/jnp.webp" alt="Trapezoid Diagram">
+    </div>
+
+    <div class="inputs">
+      <div class="input-group">
+        <label for="base1">Length of top base (b₁):</label>
+        <input type="text" id="base1" placeholder="Enter top base length">
+      </div>
+      <div class="input-group">
+        <label for="base2">Length of bottom base (b₂):</label>
+        <input type="text" id="base2" placeholder="Enter bottom base length">
+      </div>
+      <div class="input-group">
+        <label for="height">Height of trapezoid (h):</label>
+        <input type="text" id="height" placeholder="Enter height">
+      </div>
+      <div class="input-group">
+        <label for="units">Units:</label>
+        <select id="units">
+          <option value="cm">cm</option>
+          <option value="m">m</option>
+          <option value="ft">ft</option>
+          <option value="in">in</option>
+        </select>
+      </div>
+      <div class="button-container">
+        <button onclick="calculateArea()">CALCULATE</button>
+      </div>
+    </div>
+
+    <div class="output">
+      <p id="result">The area of the trapezoid is .</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script> <!-- Link to the JavaScript file -->
+</body>
+</html>
